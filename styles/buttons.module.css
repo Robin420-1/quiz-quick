@@ -1,0 +1,58 @@
+.answerButton {
+  height: 60px;
+  width: 180px;
+  margin: 2px;
+  border: none;
+  padding: auto;
+  background-color: #ffffff;
+  transition: 0.2s;
+  vertical-align: top;
+}
+
+.answerButton:hover {
+  background-color: #e4e4e4;
+  transition: 0.2s;
+}
+
+.answerButton:active {
+  background-color: #c7c7c7;
+  transition: 0.1s;
+}
+
+.checkedAnswerButton {
+  height: 60px;
+  width: 180px;
+  margin: 2px;
+  border: none;
+  padding: auto;
+  background-color: #ffd270;
+  transition: 0.2s;
+}
+
+.confirmButton {
+  height: 60px;
+  width: 364px;
+  margin: 2px;
+  border: none;
+  padding: auto;
+  background-color: #ffffff;
+}
+
+.confirmButton:hover {
+  background-color: #e4e4e4;
+  transition: 0.4s;
+}
+
+.confirmButton:active {
+    background-color: #c7c7c7;
+    transition: 0.1s;
+}
+
+.question {
+    display: inline-block;
+    border: 1px solid #C0C0C0;
+    border-radius: 8px;
+    background-color: #F0F0F0;
+    padding: 8px;
+    margin: 2px;
+}
