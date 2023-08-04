@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "../styles/quiz-styles.module.css"
 
 type QuestionProps = {
   value: string;

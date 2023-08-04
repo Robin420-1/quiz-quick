@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/buttons.module.css";
+import styles from "../styles/quiz-styles.module.css";
 
 type AnswerProps = {
   value: String;

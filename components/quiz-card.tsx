@@ -1,11 +1,11 @@
 import React from "react";
-import Question from "./quiz-question";
+import QuestionCard from "./quiz-question";
 import Answer from "./quiz-answer";
-import { QABundleProps } from "./quiz-game";
-import styles from "../styles/buttons.module.css";
+import styles from "../styles/quiz-styles.module.css";
+import { QABundle } from "@prisma/client";
 
 type QuizCardProps = {
-  qaBundle: QABundleProps;
+  qaBundle: QABundle;
   selectFunction: Function;
   confirmFunction: Function;
   selectedAnswer: number;
@@ -19,7 +19,7 @@ export default function QuizCard({
 }: QuizCardProps) {
   return (
     <div id="quiz-card">
-      <Question value={qaBundle.question} />
+      <QuestionCard value={qaBundle.question} />
       <div
         id="answers"
         className={styles.question}
@@ -55,7 +55,7 @@ export default function QuizCard({
           onClick={() =>
             confirmFunction(
               Object.values(qaBundle)[selectedAnswer],
-              qaBundle.correctAnser
+              qaBundle.correctAnswer
             )
           }
         >
